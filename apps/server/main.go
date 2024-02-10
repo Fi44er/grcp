@@ -20,7 +20,7 @@ type server struct {
 	pb.UnimplementedPostsServiceServer
 }
 
-func (s *server) HelloWorld(ctx context.Context, in *pb.HelloWorldResponse) (*pb.HelloWorldResponse, error) {
+func (s *server) helloWorld(ctx context.Context, in *pb.HelloWorldResponse) (*pb.HelloWorldResponse, error) {
 	log.Printf("Received")
 	return &pb.HelloWorldResponse{Message: in.Message}, nil
 }
