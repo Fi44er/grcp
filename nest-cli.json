@@ -8,7 +8,7 @@
     "tsConfigPath": "apps/client/tsconfig.app.json"
   },
   "monorepo": true,
-  "root": "apps/grpc",
+  "root": "apps/client",
   "projects": {
     "client": {
       "type": "application",

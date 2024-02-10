@@ -3,8 +3,6 @@ import { ClientModule } from './client.module';
 import { Transport } from '@nestjs/microservices';
 import { join } from 'path';
 
-
-
 async function bootstrap() {
   const app = await NestFactory.createMicroservice(ClientModule, {
     transport: Transport.GRPC,

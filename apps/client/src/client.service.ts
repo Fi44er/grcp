@@ -43,12 +43,9 @@ export class ClientService {
     return this.postsService.deletePost({ id });
   }
 
-  helloWorld(message: HelloWorldResponse): Observable<HelloWorldResponse> {
+  helloWorld(): Observable<HelloWorldResponse> {
     return this.postsService.helloWorld({ message: 'hello' });
   }
-
-  
-
 }
 
 
